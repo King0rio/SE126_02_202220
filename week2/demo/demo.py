@@ -29,7 +29,7 @@ eligibleToVoteNoVote = 0
 numberVoted = 0
 numRecords = 0
 
-with open("demo\DemoVote.csv") as csvfile:
+with open("week2\demo\DemoVote.csv") as csvfile:
     file = csv.reader(csvfile)
     for row in file:
       id = row[0]
