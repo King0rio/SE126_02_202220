@@ -2,7 +2,7 @@
 #Lab 1
 #1/31/2022
 
-#Program Essentials with Python, SE116, and .21
+#Intermediate Programming Using Python, SE126, and .02
 #PROGRAM PROMPT: Write a program that determines whether a meeting room is in violation of fire regulations regarding the maximum room capacity. 
 
 #VARIABLE DICTIONARY:

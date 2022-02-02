@@ -2,12 +2,19 @@
 #
 #
 
-#Program Essentials with Python, SE116, and .21
+#Intermediate Programming Using Python, SE126, and .02
 #PROGRAM PROMPT: 
 
 #VARIABLE DICTIONARY:
 #varName        description of data it will hold
-
+#records
+#overMax
+#row
+#room
+#max
+#min
+#over
+#anyKey
 
 #NOTES: 
 

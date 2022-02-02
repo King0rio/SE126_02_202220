@@ -2,7 +2,7 @@
 #
 #
 
-#Program Essentials with Python, SE116, and .21
+#Intermediate Programming Using Python, SE126, and .02
 #PROGRAM PROMPT: 
 
 #VARIABLE DICTIONARY:
