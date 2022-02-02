@@ -7,14 +7,14 @@
 
 #VARIABLE DICTIONARY:
 #varName        description of data it will hold
-#records
-#overMax
-#row
-#room
-#max
-#min
-#over
-#anyKey
+#records        
+#overMax        
+#row            
+#room           
+#max            
+#min            
+#over           
+#anyKey         
 
 #NOTES: 
 
