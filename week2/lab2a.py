@@ -1,6 +1,6 @@
 #Isaiah Diiorio
-#
-#
+#lab 2a
+#2/7/2022
 
 #Intermediate Programming Using Python, SE126, and .02
 #PROGRAM PROMPT: 
