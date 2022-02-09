@@ -13,6 +13,15 @@
 #numHits        this holds a list of all the player hits 
 #hits40         this holds the total amount of player hits >= 40 
 #avgHit         this holds the avg number of hits between all of the players 
+#file           is the file stored in the location defined in open
+#row            is used to read one row at a time from file
+#row            represents a row in the csv file
+#col            represents a column in the csv file 
+#plrName[col]   used to pull data from that colum of the csv file 
+#plrRace[col]   used to pull data from that colum of the csv file
+#plrChar[col]   used to pull data from that colum of the csv file
+#numHits[col]   used to pull data from that colum of the csv file
+
 
 #NOTES: there are 12 rows 
 
@@ -51,7 +60,7 @@ plrRace = []
 plrChar = []
 numHits = []
 
-with open("Midterm\Midterm.csv") as csvfile:
+with open("Midterm/Midterm.csv") as csvfile:
     file = csv.reader(csvfile)
     for row in file:
 
