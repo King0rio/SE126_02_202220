@@ -39,4 +39,4 @@ with open("week2\lab2b.csv") as csvfile:
             col7 = row[7]
             col8 = row[8]
         
-        print("{0}\t{1}\t{2}\t{3}\t{4}\t       {5:2}\t {6}\t   {7}  {8}".format(col0, col1, col2, col3, col4, col5, col6, col7, col8))    
+        print("{0}\t{1}\t{2}\t{3}\t{4}\t       {5:2}\t {6}\t   {7}  {8}".format(col0, col1, col2, col3, col4, col5, col6, col7, col8))

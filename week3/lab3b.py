@@ -23,6 +23,7 @@
 
 #imports------------------------------------------------
 import csv
+from numpy import append
 #functions----------------------------------------------
 #Main---------------------------------------------------
 
@@ -32,23 +33,35 @@ replaceLabtop = 0
 desktop = 0
 labtop = 0
 
+col0 = []
+col1 = []
+col2 = []
+col3 = []
+col4 = []
+col5 = []
+col6 = []
+col7 = []
+col8 = []
+
+
 with open("week3\lab3a.csv") as csvfile:
     file = csv.reader(csvfile)
     for row in file:
-        col0 = row[0]#desktop or labtop
-        col5 = row[5]#number of hard drives
-        if col5 == "1":
-            age = int(row[7])
+        col0.append(row[0])#desktop or labtop
+        col1.append(row[1])#dell or hp or gateway
+        col2.append(row[2])#processor
+        col3.append(row[3])#ammount of Ram in GB
+        col4.append(row[4])# size of hard drive
+        col5.append(row[5])#number of hard drives
+        temp = row[5]
+        if temp == "1":
+            col6.append("     ")
+            col7.append(row[6])
+            col8.append(row[7])
         else:
-            age = int(row[8])
-        
-        if age <= (year - 2):
-            if col0 == "D":
-                replaceDesktop += 2000
-                desktop += 1
-            else:
-                replaceLabtop += 1500
-                labtop += 1
+            col6.append(row[6])
+            col7.append(row[7])
+            col8.append(row[8])
 
 print("To Replace {0:2} It Will Cost: ${1:8}\nTo Replace {2:2} It Will Cost: ${3:8}".format(desktop, replaceDesktop, labtop, replaceLabtop))
 
