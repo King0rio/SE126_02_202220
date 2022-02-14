@@ -21,7 +21,9 @@ def seatMap():
     for col in range(1,8):
         print("{0:2}  {1}  {2}    {3}  {4}".format(col, col1[col], col2[col], col3[col], col4[col]))
 
-
+def seatChoice():
+    '''User is promped to make a choice on there seat'''
+    userInput = 0
 #Main---------------------------------------------------
 
 
