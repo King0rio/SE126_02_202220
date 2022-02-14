@@ -3,7 +3,7 @@
 #2/14/2022
 
 #Intermediate Programming Using Python, SE126, and .02
-#PROGRAM PROMPT: 
+#PROGRAM PROMPT: place all the data from the file into lists.. Once all the data has be loaded into arrays you must search the array to determine how many computers have more than 8GB of RAM.
 
 #VARIABLE DICTIONARY:
 #varName        description of data it will hold
