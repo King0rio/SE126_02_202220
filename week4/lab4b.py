@@ -12,8 +12,16 @@
 #NOTES: 
 
 #imports------------------------------------------------
-import
+
 #functions----------------------------------------------
+def seatMap():
+    '''Displays the seating arangements on the plane'''
+    print("Row")
+
+    for col in range(1,8):
+        print("{0:2}  {1}  {2}    {3}  {4}".format(col, col1[col], col2[col], col3[col], col4[col]))
+
+
 #Main---------------------------------------------------
 
 
@@ -25,5 +33,4 @@ col4 = ["", "D", "D", "D", "D", "D", "D", "D"]
 
 
 
-
-print(col1)
+seatMap()
