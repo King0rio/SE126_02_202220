@@ -13,6 +13,15 @@
 
 #imports------------------------------------------------
 #functions----------------------------------------------
+
+def userMenu():
+    ''''''
+    print("LOGIN USER\n1. Customer\n2. Theater Staff\n3. Theater Manager")
+    #while user input is not == to 1 2 3
+    #    userInput = input("\n[1/2/3]: ")
+
+
+
 def fillRows():
     '''Fills all of the arrays'''
     x = ["", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", ]
@@ -35,18 +44,6 @@ def inputTest2(input2):
 def seatChoice():
     '''yo'''
 
-def seatsTaken():
-    '''yo'''
-
-    seatsTaken = 0
-    seatsAvailable = 0
-
-    for row in range(1, 31):
-        if cA[row] == "X":
-            seatsTaken += 1
-        elif cA[row] == "#":
-            seatsAvailable += 1
-            
 #Main---------------------------------------------------
 
 cA = fillRows()
