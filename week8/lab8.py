@@ -37,16 +37,16 @@ def seatChoice():
 
 def seatsTaken():
     '''yo'''
-
+    
     seatsTaken = 0
     seatsAvailable = 0
-
+    this = [[seatsTaken, seatsAvailable], []]
     for row in range(1, 31):
         if cA[row] == "X":
             seatsTaken += 1
         elif cA[row] == "#":
             seatsAvailable += 1
-            
+
 #Main---------------------------------------------------
 
 cA = fillRows()
