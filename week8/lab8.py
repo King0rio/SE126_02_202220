@@ -13,6 +13,9 @@
 
 #imports------------------------------------------------
 #functions----------------------------------------------
+from sqlalchemy import literal
+
+
 def fillRows():
     '''Fills all of the arrays'''
     x = ["", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", ]
@@ -28,14 +31,18 @@ def seatMap():
 
 def seatChoice():
     '''yo'''
-    userInput1 = input("What Row Would You Like Your Seat To Be In : ")
-    userInput2 = input("What Column Would You Like To Be Seated In : ")
+    userInput1 = "c" + input("What Column Would You Like To Be Seated In : ")
+    userInput2 = input("What Row Would You Like Your Seat To Be In : ")
+
+    print(userInput1)
+    userInput1[userInput2] = "X" 
+
 
 def seatsTaken(column):
     '''yo'''
     seatsTaken = 0
     seatsAvailable = 0
-    for row in range(1, 31):
+    for row in range(1, 16):
         if column[row] == "X":
             seatsTaken += 1
         elif column[row] == "#":
@@ -176,10 +183,10 @@ c4 = fillRows()
 
 seatsSold = 0 
 seatsUnsold = 0
-
-
+seatsSold, seatsUnsold= seatsTakenTotal()
+print(seatsUnsold, seatsSold)
 seatMap()
-
-
+seatChoice()
+seatMap()
 
 
