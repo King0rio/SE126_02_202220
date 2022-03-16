@@ -43,7 +43,7 @@ csvfile.close()
 #print(fullName)
 
 sort(lname, fname)
-with open('week9\Lab9Write.csv', 'w') as csvfile:
+with open('E:\Python126\Lab9BWrite.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(lname)
     writer.writerow(fname)
