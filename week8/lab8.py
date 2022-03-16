@@ -12,6 +12,7 @@
 #NOTES: like the plane seating 
 
 #imports------------------------------------------------
+
 #functions----------------------------------------------
 
 
@@ -149,44 +150,3 @@ def seatsTakenTotal():
     return seatsTakenTotal, seatsAvailableTotal
 
 #Main---------------------------------------------------
-
-cA = fillRows()
-cB = fillRows()
-cC = fillRows()
-cD = fillRows()
-cE = fillRows()
-cF = fillRows()
-cG = fillRows()
-cH = fillRows()
-cI = fillRows()
-cJ = fillRows()
-cK = fillRows()
-cL = fillRows()
-cM = fillRows()
-cN = fillRows()
-cO = fillRows()
-cP = fillRows()
-cQ = fillRows()
-cR = fillRows()
-cS = fillRows()
-cT = fillRows()
-cU = fillRows()
-cV = fillRows()
-cW = fillRows()
-cX = fillRows()
-cY = fillRows()
-cZ = fillRows()
-c1 = fillRows()
-c2 = fillRows()
-c3 = fillRows()
-c4 = fillRows()
-
-seatsSold = 0 
-seatsUnsold = 0
-seatsSold, seatsUnsold= seatsTakenTotal()
-print(seatsUnsold, seatsSold)
-seatMap()
-seatChoice()
-seatMap()
-
-
