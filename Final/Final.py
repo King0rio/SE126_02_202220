@@ -17,8 +17,8 @@ import csv
 
 def visuals(arr):
     '''The basics of the program'''
-    possibleValue = 15
-    length = len(arr)
+    length = 15
+    #length = len(arr)
     print("Last       First      State      Phone Number")
     for x in range (0, length):
         for y in range(0, 4):
@@ -37,6 +37,9 @@ def swap():
 
 def sort(fileInfo):
     '''sort the file Data by last name alphebectically'''
+
+    swap()
+
     x = len(fileInfo) - 1
     for i in range(x):
         for j in range(x - i):
@@ -45,21 +48,43 @@ def sort(fileInfo):
 
     return fileData
 
-
-def binarySearch(arr, key):
+#def binarySearch(arr, key):
     '''yo '''
     low = 0
     high = len(arr)-1
     while low <= high:
         mid = (low + high)/2
-        if np.array_equal(key, arr[mid]):
+        if key == arr[mid]:
             return mid
-        elif key+arr[mid] < 0:
+        elif key % arr[mid] < 0:
             high = mid-1
         else:
             low = mid+1
     else:
         return -1
+
+
+
+def binarySearch(array, x, low, high):
+    if high >= low:
+
+        mid = low + (high - low)//2
+
+        # If found at mid, then return it
+        if array[mid] == x:
+            return mid
+
+        # Search the left half
+        elif array[mid] > x:
+            return binarySearch(array, x, low, mid-1)
+
+        # Search the right half
+        else:
+            return binarySearch(array, x, mid + 1, high)
+
+    else:
+        return -1
+
 #Main---------------------------------------------------
 fileData = []
 
@@ -69,6 +94,18 @@ with open('Final/exam1.txt') as csvfile:
         fileData.append(row)
 csvfile.close()
 
-swap()
 sort(fileData)
 visuals(fileData)
+
+userInput = input("\nWho's File are you looking for (Last Name) : ")
+
+last = []
+for i in range(0, 70):
+    last.append(fileData[i][0])
+
+output = binarySearch(last, userInput, 0, 70)
+if output != -1:
+    for x in range(0, 4):
+        print("{0:10} ".format(fileData[output][x]), end="")
+else:
+    print("Invalid Last Name")
